@@ -40,13 +40,13 @@ export class AppComponent  {
 
   calculate(){
     if(this.operator== '+'){
-      this.total = Number(this.left) + Number(this.right);
+      this.total = parseInt(this.left) + parseInt(this.right);
     }
     else if(this.operator== '-'){
-      this.total = Number(this.left) - Number(this.right);
+      this.total = parseInt(this.left) - parseInt(this.right);
     }
     else if(this.operator== '*'){
-      this.total = Number(this.left) * Number(this.right);
+      this.total = parseInt(this.left) * parseInt(this.right);
     }
     this.router.navigate(['/show', this.total])
   }
