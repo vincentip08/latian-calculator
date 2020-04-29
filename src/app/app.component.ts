@@ -11,8 +11,8 @@ export class AppComponent  {
 
   constructor(private router : Router){}
 
-  left : string;
-  right : string;
+  left : string = '';
+  right : string = '';
   operator : string;
   temp : string;
   total = 0;
