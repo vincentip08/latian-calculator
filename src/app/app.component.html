@@ -1,0 +1,29 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<textarea>{{left}} {{operator}} {{right}}</textarea>
+<br><br>
+<div>
+  <button (click)="addOperand(7)">7</button>
+  <button (click)="addOperand(8)">8</button>
+  <button (click)="addOperand(9)">9</button>
+  <br><br>
+  <button (click)="addOperand(4)">4</button>
+  <button (click)="addOperand(5)">5</button>
+  <button (click)="addOperand(6)">6</button>
+  <br><br>
+  <button (click)="addOperand(1)">1</button>
+  <button (click)="addOperand(2)">2</button>
+  <button (click)="addOperand(3)">3</button>
+  <br><br>
+  <button (click)="addOperator('+')">+</button>
+  <button (click)="addOperator('-')">-</button>
+  <button (click)="addOperator('*')">*</button>
+  <button (click)="calculate()">=</button>
+</div>
+
+<br><br>
+<router-outlet></router-outlet>
+
